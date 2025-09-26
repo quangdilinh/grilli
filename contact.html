@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tags
+  -->
+  <title>Grilli - Contact Us</title>
+  <meta name="title" content="Grilli - Contact Us">
+  <meta name="description" content="Connect with the Grilli team for reservations, events, and inquiries.">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+
+<body id="top">
+
+  <!--
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Grilli</p>
+  </div>
+
+
+
+  <!--
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant St, Delicious City, London 9578, UK
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html#home" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#chefs" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            London 9578, UK
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +88-123-123456
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="index.html#reservation" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #PAGE HERO
+      -->
+
+      <section class="section page-header has-bg-image text-center" aria-label="contact hero"
+        style="background-image: url('./assets/images/hero-slider-3.jpg')">
+        <div class="container">
+          <p class="section-subtitle label-2">Contact</p>
+
+          <h1 class="headline-1">We'd Love To Hear From You</h1>
+
+          <p class="section-text body-2">
+            Whether you are planning a celebration, booking a private dinner, or simply craving our signature dishes,
+            the Grilli team is ready to help.
+          </p>
+        </div>
+      </section>
+
+
+
+      <!--
+        - #CONTACT DETAILS
+      -->
+
+      <section class="section contact-details" aria-label="contact details">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <p class="section-subtitle label-2">Reach Out</p>
+
+              <h2 class="headline-1 section-title">Visit Our Restaurant</h2>
+
+              <p class="section-text">
+                Get in touch for reservations, private dining, or any questions about our seasonal menus. Our hospitality
+                team is always delighted to assist you.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-card">
+                    <div class="card-icon">
+                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <p class="card-title title-2">Restaurant Address</p>
+
+                      <address class="body-4">
+                        Restaurant St, Delicious City, <br>
+                        London 9578, UK
+                      </address>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="contact-card">
+                    <div class="card-icon">
+                      <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <p class="card-title title-2">Phone Numbers</p>
+
+                      <a href="tel:+88123123456" class="body-4 contact-link hover-underline">Booking Request :
+                        +88-123-123456</a>
+                      <a href="tel:+84912345678" class="body-4 contact-link hover-underline">General Inquiries :
+                        +84 912 345 678</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="contact-card">
+                    <div class="card-icon">
+                      <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <p class="card-title title-2">Email</p>
+
+                      <a href="mailto:booking@grilli.com" class="body-4 contact-link hover-underline">booking@grilli.com</a>
+                      <a href="mailto:hello@grilli.example" class="body-4 contact-link hover-underline">hello@grilli.example</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="contact-card">
+                    <div class="card-icon">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <p class="card-title title-2">Opening Hours</p>
+
+                      <p class="body-4">Lunch : 11.00 am - 2.30 pm</p>
+                      <p class="body-4">Dinner : 05.00 pm - 10.00 pm</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.8453999382092!2d-0.12764738461290486!3d51.507321979635524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3339a9a6b9%3A0xdeb6a9d8b2666eb!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1697040000000!5m2!1sen!2suk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Grilli restaurant on Google Maps"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--
+        - #CONTACT FORM
+      -->
+
+      <section class="section contact-form" aria-label="contact form">
+        <div class="container">
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+              <h2 class="headline-1 text-center">Send A Message</h2>
+
+              <p class="form-text text-center">
+                Prefer to write? Share your message below and a member of the Grilli team will reply shortly.
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="full-name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="email" name="email" placeholder="Email Address" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+
+                <input type="text" name="subject" placeholder="Subject" autocomplete="off" class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Send Message</span>
+
+                <span class="text text-2" aria-hidden="true">Send Message</span>
+              </button>
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Booking Request</h2>
+
+              <p class="contact-label">Call Us</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Email</p>
+
+              <a href="mailto:booking@grilli.com" class="body-4 contact-link hover-underline">booking@grilli.com</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Opening Hours</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 10.00 pm
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            London 9578, UK
+          </address>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 01:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="index.html#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html#chefs" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
+            target="_blank" class="link">codewithsadee</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
