@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tags
+  -->
+  <title>Grilli - Our Menu</title>
+  <meta name="title" content="Grilli - Our Menu">
+  <meta name="description" content="Browse the full Grilli menu and discover seasonal starters, mains, desserts, and crafted drinks.">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+</head>
+
+<body id="top">
+
+  <!--
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Grilli</p>
+  </div>
+
+
+
+  <!--
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant St, Delicious City, London 9578, UK
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline active" aria-current="page">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="chefs.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            London 9578, UK
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +88-123-123456
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="index.html#reservation" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #PAGE HERO
+      -->
+
+      <section class="section page-header has-bg-image text-center" aria-label="menu hero"
+        style="background-image: url('./assets/images/hero-slider-2.jpg')">
+        <div class="container">
+          <p class="section-subtitle label-2">Our Menu</p>
+
+          <h1 class="headline-1">Discover Every Flavor</h1>
+
+          <p class="section-text body-2">
+            From the first bite to the final toast, explore the dishes and drinks crafted by our culinary team.
+          </p>
+        </div>
+      </section>
+
+
+
+      <!--
+        - #MENU FILTER
+      -->
+
+      <section class="section menu-page" aria-label="menu categories">
+        <div class="container" data-menu-filter>
+          <p class="section-subtitle text-center label-2">Categories</p>
+
+          <h2 class="headline-1 section-title text-center">Browse The Menu</h2>
+
+          <div class="filter-list" role="tablist" aria-label="Menu categories">
+            <button type="button" class="filter-btn active" data-filter-btn data-filter="all" role="tab"
+              aria-selected="true">All</button>
+            <button type="button" class="filter-btn" data-filter-btn data-filter="starters" role="tab"
+              aria-selected="false">Starters</button>
+            <button type="button" class="filter-btn" data-filter-btn data-filter="mains" role="tab"
+              aria-selected="false">Mains</button>
+            <button type="button" class="filter-btn" data-filter-btn data-filter="desserts" role="tab"
+              aria-selected="false">Desserts</button>
+            <button type="button" class="filter-btn" data-filter-btn data-filter="drinks" role="tab"
+              aria-selected="false">Drinks</button>
+          </div>
+
+          <ul class="grid-list" data-menu-grid>
+            <li data-menu-item data-category="starters">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Heirloom Tomato Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Heirloom Tomato Salad</span>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">$18.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Sweet tomatoes, basil oil, burrata, and aged balsamic pearls.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="starters">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Charred Octopus"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Charred Octopus</span>
+                    </h3>
+
+                    <span class="span title-2">$22.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Smoked paprika aioli, fingerling potatoes, and preserved lemon.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="mains">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Wagyu Striploin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Wagyu Striploin</span>
+                    </h3>
+
+                    <span class="badge label-1">Signature</span>
+
+                    <span class="span title-2">$48.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Miso-glazed wagyu, roasted garlic potato purée, charred broccolini.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="mains">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Truffle Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Truffle Lasagne</span>
+                    </h3>
+
+                    <span class="span title-2">$32.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    House pasta sheets, wild mushrooms, ricotta, and black truffle cream.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="desserts">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Salted Caramel Tart"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Salted Caramel Tart</span>
+                    </h3>
+
+                    <span class="span title-2">$14.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Dark chocolate crust, caramel ganache, vanilla bean chantilly.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="desserts">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Citrus Pavlova"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Citrus Pavlova</span>
+                    </h3>
+
+                    <span class="span title-2">$13.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crispy meringue, yuzu curd, ruby grapefruit, and mint.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="drinks">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/event-1.jpg" width="100" height="100" loading="lazy" alt="Smoked Old Fashioned"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Smoked Old Fashioned</span>
+                    </h3>
+
+                    <span class="span title-2">$16.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Barrel-aged bourbon, smoked maple, bitters, orange zest.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-menu-item data-category="drinks">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/event-2.jpg" width="100" height="100" loading="lazy"
+                    alt="Garden Tonic" class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <span class="card-title">Garden Tonic</span>
+                    </h3>
+
+                    <span class="span title-2">$14.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Botanical gin, cucumber cordial, tonic, basil blossoms.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+          <p class="menu-empty body-4" data-menu-empty hidden>No dishes match this category yet. Please choose another
+            selection.</p>
+        </div>
+      </section>
+
+
+
+      <!--
+        - #RESERVATION CTA
+      -->
+
+      <section class="section menu-cta" aria-label="menu reservation">
+        <div class="container">
+          <div class="menu-cta-card bg-black-10">
+            <div>
+              <p class="section-subtitle label-2">Chef's Recommendation</p>
+              <h2 class="headline-1 section-title">Pair Your Evening With Grilli</h2>
+              <p class="section-text">
+                Let our sommeliers and chefs curate the perfect tasting for your celebration. Reserve a table to enjoy
+                seasonal specials and bespoke cocktails.
+              </p>
+            </div>
+
+            <a href="index.html#reservation" class="btn btn-primary">
+              <span class="text text-1">Reserve Now</span>
+
+              <span class="text text-2" aria-hidden="true">Reserve Now</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image" style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            London 9578, UK
+          </address>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 01:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="chefs.html" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee" target="_blank"
+            class="link">codewithsadee</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

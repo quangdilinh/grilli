@@ -1505,6 +1505,262 @@ textarea.input-field {
 }
 
 /*-----------------------------------*\
+  #MENU PAGE
+\*-----------------------------------*/
+
+[hidden] { display: none !important; }
+
+.menu-page .section-title { margin-block-end: 12px; }
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-block: 32px 40px;
+}
+
+.filter-btn {
+  padding: 12px 26px;
+  border-radius: 99px;
+  border: 1px solid var(--white-alpha-10);
+  background-color: transparent;
+  color: var(--quick-silver);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  transition: var(--transition-1);
+}
+
+.filter-btn:is(:hover, :focus-visible),
+.filter-btn.active {
+  color: var(--black);
+  background-color: var(--gold-crayola);
+  border-color: var(--gold-crayola);
+}
+
+.menu-page .grid-list { margin-block-end: 40px; }
+
+.menu-page .menu-card {
+  height: 100%;
+  border: 1px solid var(--white-alpha-10);
+}
+
+.menu-page .menu-card:hover { border-color: var(--gold-crayola); }
+
+.menu-page .menu-card .title-wrapper {
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-empty {
+  text-align: center;
+  color: var(--quick-silver);
+}
+
+.menu-cta-card {
+  display: grid;
+  gap: 30px;
+  padding: 40px;
+  border-radius: var(--radius-24);
+  border: 1px solid var(--white-alpha-10);
+  align-items: center;
+}
+
+.menu-cta-card .section-text { color: var(--quick-silver); }
+
+/*-----------------------------------*\
+  #CHEFS PAGE
+\*-----------------------------------*/
+
+.chefs-grid {
+  margin-block-start: 50px;
+}
+
+.chef-card {
+  width: 100%;
+  text-align: left;
+  background-color: var(--smoky-black-2);
+  border: 1px solid var(--white-alpha-10);
+  border-radius: var(--radius-24);
+  overflow: hidden;
+  transition: var(--transition-2);
+}
+
+.chef-card .card-banner { transition: var(--transition-2); }
+
+.chef-card .card-content {
+  padding: 30px 32px 36px;
+  display: grid;
+  gap: 10px;
+}
+
+.chef-card .btn-text { justify-self: flex-start; }
+
+.chef-card:is(:hover, :focus-visible) {
+  transform: translateY(-6px);
+  border-color: var(--gold-crayola);
+}
+
+.chef-card:is(:hover, :focus-visible) .card-banner {
+  transform: scale(1.05);
+}
+
+.chef-card .label-2 { color: var(--gold-crayola); }
+
+.chef-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
+}
+
+.chef-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.chef-modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--black-alpha-80);
+}
+
+.chef-modal .modal-content {
+  position: relative;
+  z-index: 1;
+  background-color: var(--smoky-black-2);
+  border: 1px solid var(--white-alpha-10);
+  border-radius: var(--radius-24);
+  overflow: hidden;
+  display: grid;
+  gap: 0;
+  max-width: 860px;
+  width: min(100%, 860px);
+}
+
+.chef-modal .modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-circle);
+  background-color: var(--black-alpha-15);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  transition: var(--transition-1);
+}
+
+.chef-modal .modal-close:is(:hover, :focus-visible) {
+  background-color: var(--gold-crayola);
+  color: var(--black);
+}
+
+.chef-modal .modal-media { aspect-ratio: 6 / 5; }
+
+.chef-modal .modal-body {
+  padding: 40px 32px 48px;
+  display: grid;
+  gap: 16px;
+}
+
+.chef-modal .modal-body .label-2 { color: var(--gold-crayola); }
+
+.modal-specialty {
+  color: var(--quick-silver);
+  border-top: 1px solid var(--white-alpha-10);
+  padding-block-start: 16px;
+}
+
+body.modal-active { overflow: hidden; }
+
+/*-----------------------------------*\
+  #ABOUT PAGE
+\*-----------------------------------*/
+
+.about-story .container {
+  display: grid;
+  gap: 50px;
+}
+
+.story-content {
+  display: grid;
+  gap: 20px;
+}
+
+.story-content .section-text { color: var(--quick-silver); }
+
+.about-feature-list {
+  display: grid;
+  gap: 20px;
+  margin-block: 10px 20px;
+}
+
+.feature-card {
+  display: flex;
+  gap: 16px;
+  padding: 18px 22px;
+  background-color: var(--smoky-black-2);
+  border: 1px solid var(--white-alpha-10);
+  border-radius: var(--radius-24);
+}
+
+.feature-card .card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-circle);
+  background-color: var(--white-alpha-10);
+  display: grid;
+  place-items: center;
+}
+
+.feature-card .body-4 { color: var(--quick-silver); }
+
+.story-cta {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.story-gallery {
+  display: grid;
+  gap: 24px;
+}
+
+.story-gallery .gallery-card {
+  border-radius: var(--radius-24);
+  overflow: hidden;
+  border: 1px solid var(--white-alpha-10);
+}
+
+.story-gallery .gallery-card.large { grid-row: span 2; }
+
+.about-values .values-card {
+  display: grid;
+  gap: 32px;
+  padding: 40px;
+  border-radius: var(--radius-24);
+  border: 1px solid var(--white-alpha-10);
+}
+
+.about-values .section-text { color: var(--quick-silver); }
+
+.values-list {
+  display: grid;
+  gap: 24px;
+}
+
+.values-list .body-4 { color: var(--quick-silver); }
+
+
+/*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
 
@@ -1755,6 +2011,17 @@ textarea.input-field {
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
+  .menu-page .grid-list,
+  .chefs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .story-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .story-cta {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+  }
+
   .contact-list { grid-template-columns: 1fr 1fr; }
 
   .page-header { padding-block: 220px 140px; }
@@ -1872,6 +2139,19 @@ textarea.input-field {
     width: 100%;
   }
 
+  .menu-page .grid-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .chefs-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .menu-cta-card {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .chef-modal .modal-content { grid-template-columns: 0.85fr 1fr; }
+
+  .chef-modal .modal-media { aspect-ratio: 4 / 5; }
+
   .contact-wrapper {
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -1917,6 +2197,14 @@ textarea.input-field {
     grid-template-columns: 0.7fr 1fr;
     gap: 30px;
   }
+
+  .about-story .container {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .story-gallery { align-self: stretch; }
 
 
 
@@ -1965,6 +2253,8 @@ textarea.input-field {
     height: 100%;
     border-inline-start: 1px solid var(--white-alpha-20);
   }
+
+  .values-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 
 

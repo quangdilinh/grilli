@@ -9,9 +9,9 @@
   <!--
     - primary meta tags
   -->
-  <title>Grilli - Contact Us</title>
-  <meta name="title" content="Grilli - Contact Us">
-  <meta name="description" content="Connect with the Grilli team for reservations, events, and inquiries.">
+  <title>Grilli - Our Chefs</title>
+  <meta name="title" content="Grilli - Our Chefs">
+  <meta name="description" content="Meet the masterful culinary team behind Grilli's signature dishes and seasonal tasting menus.">
 
   <!--
     - favicon
@@ -33,7 +33,7 @@
   <!--
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
 </head>
 
 <body id="top">
@@ -147,7 +147,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="chefs.html" class="navbar-link hover-underline">
+            <a href="chefs.html" class="navbar-link hover-underline active" aria-current="page">
               <div class="separator"></div>
 
               <span class="span">Our Chefs</span>
@@ -155,7 +155,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="contact.html" class="navbar-link hover-underline active">
+            <a href="contact.html" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Contact</span>
@@ -213,16 +213,15 @@
         - #PAGE HERO
       -->
 
-      <section class="section page-header has-bg-image text-center" aria-label="contact hero"
-        style="background-image: url('./assets/images/hero-slider-3.jpg')">
+      <section class="section page-header has-bg-image text-center" aria-label="chef hero"
+        style="background-image: url('./assets/images/hero-slider-1.jpg')">
         <div class="container">
-          <p class="section-subtitle label-2">Contact</p>
+          <p class="section-subtitle label-2">Our Team</p>
 
-          <h1 class="headline-1">We'd Love To Hear From You</h1>
+          <h1 class="headline-1">Culinary Artisans of Grilli</h1>
 
           <p class="section-text body-2">
-            Whether you are planning a celebration, booking a private dinner, or simply craving our signature dishes,
-            the Grilli team is ready to help.
+            Dedicated chefs, sommeliers, and artisans crafting unforgettable dining experiences every evening.
           </p>
         </div>
       </section>
@@ -230,165 +229,99 @@
 
 
       <!--
-        - #CONTACT DETAILS
+        - #CHEF GRID
       -->
 
-      <section class="section contact-details" aria-label="contact details">
+      <section class="section chefs" aria-label="chef profiles">
         <div class="container">
-          <div class="contact-wrapper">
-            <div class="contact-info">
-              <p class="section-subtitle label-2">Reach Out</p>
+          <p class="section-subtitle text-center label-2">Meet The Team</p>
 
-              <h2 class="headline-1 section-title">Visit Our Restaurant</h2>
+          <h2 class="headline-1 section-title text-center">Masters Behind The Flame</h2>
 
-              <p class="section-text">
-                Get in touch for reservations, private dining, or any questions about our seasonal menus. Our hospitality
-                team is always delighted to assist you.
-              </p>
+          <ul class="grid-list chefs-grid">
+            <li>
+              <button type="button" class="chef-card" data-chef-card data-name="Luca Moretti" data-role="Executive Chef"
+                data-specialty="Signature Tasting Menu" data-bio="Chef Luca leads the kitchen with a focus on seasonal produce, modern European techniques, and soulful hospitality." data-image="./assets/images/service-1.jpg">
+                <figure class="card-banner img-holder" style="--width: 350; --height: 420;">
+                  <img src="./assets/images/service-1.jpg" width="350" height="420" loading="lazy" alt="Chef Luca Moretti"
+                    class="img-cover">
+                </figure>
 
-              <ul class="contact-list">
-                <li>
-                  <div class="contact-card">
-                    <div class="card-icon">
-                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-                    </div>
+                <div class="card-content">
+                  <p class="label-2">Executive Chef</p>
+                  <h3 class="title-3">Luca Moretti</h3>
+                  <p class="body-4">Guiding the brigade with precision and warmth.</p>
+                  <span class="btn-text">View Profile</span>
+                </div>
+              </button>
+            </li>
 
-                    <div>
-                      <p class="card-title title-2">Restaurant Address</p>
+            <li>
+              <button type="button" class="chef-card" data-chef-card data-name="Amelia Chen" data-role="Pastry Director"
+                data-specialty="Seasonal Desserts" data-bio="Chef Amelia layers classic pastry foundations with unexpected botanicals to create desserts that delight every sense." data-image="./assets/images/service-2.jpg">
+                <figure class="card-banner img-holder" style="--width: 350; --height: 420;">
+                  <img src="./assets/images/service-2.jpg" width="350" height="420" loading="lazy" alt="Chef Amelia Chen"
+                    class="img-cover">
+                </figure>
 
-                      <address class="body-4">
-                        Restaurant St, Delicious City, <br>
-                        London 9578, UK
-                      </address>
-                    </div>
-                  </div>
-                </li>
+                <div class="card-content">
+                  <p class="label-2">Pastry Director</p>
+                  <h3 class="title-3">Amelia Chen</h3>
+                  <p class="body-4">Balancing texture, aroma, and vibrant color.</p>
+                  <span class="btn-text">View Profile</span>
+                </div>
+              </button>
+            </li>
 
-                <li>
-                  <div class="contact-card">
-                    <div class="card-icon">
-                      <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                    </div>
+            <li>
+              <button type="button" class="chef-card" data-chef-card data-name="Mateo Silva" data-role="Chef de Cuisine"
+                data-specialty="Wood-Fired Grill" data-bio="Chef Mateo harmonizes fire and smoke to enhance responsibly sourced meats, seafood, and vegetables." data-image="./assets/images/service-3.jpg">
+                <figure class="card-banner img-holder" style="--width: 350; --height: 420;">
+                  <img src="./assets/images/service-3.jpg" width="350" height="420" loading="lazy" alt="Chef Mateo Silva"
+                    class="img-cover">
+                </figure>
 
-                    <div>
-                      <p class="card-title title-2">Phone Numbers</p>
-
-                      <a href="tel:+88123123456" class="body-4 contact-link hover-underline">Booking Request :
-                        +88-123-123456</a>
-                      <a href="tel:+84912345678" class="body-4 contact-link hover-underline">General Inquiries :
-                        +84 912 345 678</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="contact-card">
-                    <div class="card-icon">
-                      <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div>
-                      <p class="card-title title-2">Email</p>
-
-                      <a href="mailto:booking@grilli.com" class="body-4 contact-link hover-underline">booking@grilli.com</a>
-                      <a href="mailto:hello@grilli.example" class="body-4 contact-link hover-underline">hello@grilli.example</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="contact-card">
-                    <div class="card-icon">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div>
-                      <p class="card-title title-2">Opening Hours</p>
-
-                      <p class="body-4">Lunch : 11.00 am - 2.30 pm</p>
-                      <p class="body-4">Dinner : 05.00 pm - 10.00 pm</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="contact-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.8453999382092!2d-0.12764738461290486!3d51.507321979635524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3339a9a6b9%3A0xdeb6a9d8b2666eb!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1697040000000!5m2!1sen!2suk"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Grilli restaurant on Google Maps"></iframe>
-            </div>
-          </div>
+                <div class="card-content">
+                  <p class="label-2">Chef de Cuisine</p>
+                  <h3 class="title-3">Mateo Silva</h3>
+                  <p class="body-4">Sourcing sustainably and plating with artistry.</p>
+                  <span class="btn-text">View Profile</span>
+                </div>
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
 
 
       <!--
-        - #CONTACT FORM
+        - #CHEF MODAL
       -->
 
-      <section class="section contact-form" aria-label="contact form">
-        <div class="container">
-          <div class="form reservation-form bg-black-10">
+      <div class="chef-modal" data-chef-modal>
+        <div class="modal-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+          <button type="button" class="modal-close" aria-label="Close chef details" data-modal-close>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
 
-            <form action="" class="form-left">
-              <h2 class="headline-1 text-center">Send A Message</h2>
+          <figure class="modal-media">
+            <img src="./assets/images/service-1.jpg" width="360" height="420" alt="Chef portrait" class="img-cover"
+              data-modal-img>
+          </figure>
 
-              <p class="form-text text-center">
-                Prefer to write? Share your message below and a member of the Grilli team will reply shortly.
-              </p>
-
-              <div class="input-wrapper">
-                <input type="text" name="full-name" placeholder="Your Name" autocomplete="off" class="input-field">
-
-                <input type="email" name="email" placeholder="Email Address" autocomplete="off" class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
-
-                <input type="text" name="subject" placeholder="Subject" autocomplete="off" class="input-field">
-              </div>
-
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary">
-                <span class="text text-1">Send Message</span>
-
-                <span class="text text-2" aria-hidden="true">Send Message</span>
-              </button>
-            </form>
-
-            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
-
-              <h2 class="headline-1 text-center">Booking Request</h2>
-
-              <p class="contact-label">Call Us</p>
-
-              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
-
-              <div class="separator"></div>
-
-              <p class="contact-label">Email</p>
-
-              <a href="mailto:booking@grilli.com" class="body-4 contact-link hover-underline">booking@grilli.com</a>
-
-              <div class="separator"></div>
-
-              <p class="contact-label">Opening Hours</p>
-
-              <p class="body-4">
-                Monday to Sunday <br>
-                11.00 am - 10.00 pm
-              </p>
-
-            </div>
-
+          <div class="modal-body">
+            <p class="label-2" data-modal-role>Executive Chef</p>
+            <h3 class="headline-2" data-modal-name>Luca Moretti</h3>
+            <p class="body-4" data-modal-bio>
+              Chef Luca leads the kitchen with a focus on seasonal produce, modern European techniques, and soulful
+              hospitality.
+            </p>
+            <p class="body-4 modal-specialty" data-modal-specialty hidden>Specialty: Signature Tasting Menu</p>
           </div>
         </div>
-      </section>
+      </div>
 
     </article>
   </main>
@@ -399,8 +332,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
+  <footer class="footer section has-bg-image" style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
 
       <div class="footer-top grid-list">
@@ -505,8 +437,8 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee" target="_blank"
+            class="link">codewithsadee</a>
         </p>
 
       </div>
